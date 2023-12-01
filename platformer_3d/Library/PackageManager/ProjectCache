@@ -13,14 +13,14 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638360928869018148
-    m_Hash: 2893255222
+      ticks: 638369749601847065
+    m_Hash: 4276827172
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: Z:/Workspaces/Github/platformer-game-demo/platformer_3d/Packages
-m_EditorVersion: 2022.3.13f1 (5f90a5ebde0f)
+m_EditorVersion: 2022.3.14f1 (eff2de9070d8)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -421,7 +421,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.11.0
+    version: 1.12.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -985,7 +985,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.11.0
+    version: 1.12.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.2.1
   keywords:
@@ -3640,12 +3640,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.services.core@1.11.0
+- packageId: com.unity.services.core@1.12.0
   testable: 0
   isDirectDependency: 0
-  version: 1.11.0
+  version: 1.12.0
   source: 1
-  resolvedPath: Z:\Workspaces\Github\platformer-game-demo\platformer_3d\Library\PackageCache\com.unity.services.core@1.11.0
+  resolvedPath: Z:\Workspaces\Github\platformer-game-demo\platformer_3d\Library\PackageCache\com.unity.services.core@1.12.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3691,10 +3691,9 @@ m_ResolvedPackages:
     - 1.12.0
     - 1.12.1
     compatible:
-    - 1.11.0
     - 1.12.0
     - 1.12.1
-    recommended: 1.11.0
+    recommended: 1.12.1
     deprecated: []
   dependencies:
   - name: com.unity.modules.unitywebrequest
@@ -3721,16 +3720,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638269929060000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.11/manual/index.html
+  datePublishedTicks: 638337628320000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.12/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: dd29ee68b03935e05ea9551c5cf1e9c5ec83d939
+    revision: bb79575fc5daa804c44378ca264da0927e0d89da
     path: 
   unityLifecycle:
-    version: 1.11.0
+    version: 1.12.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3805,7 +3804,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.11.0
+    version: 1.12.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
