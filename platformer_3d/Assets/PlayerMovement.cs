@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    const string JUMP_INPUT_BUTTON_NAME = "Jump";
+    const string HORIZONTAL_INPUT_NAME = "Horizontal";
+    const string VERTICAL_INPUT_NAME = "Vertical";
+
     private Rigidbody _rigidBody;
     // Start is called before the first frame update
     void Start()
@@ -12,25 +16,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        float horizontalInput = Input.GetAxis(HORIZONTAL_INPUT_NAME);
+        float verticalInput = Input.GetAxis(VERTICAL_INPUT_NAME);
+
+        _rigidBody.velocity = new Vector3(horizontalInput * 5f, _rigidBody.velocity.y, verticalInput * 5f);
+        if (Input.GetButtonDown(JUMP_INPUT_BUTTON_NAME))
         {
-            _rigidBody.velocity = new Vector3(0, 5, 0); // since we are only jumping, then we only need to set the Y value of the vector3 structure
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            _rigidBody.velocity = new Vector3(0, 0, 5); // since we are moving up, then we only need to set the Z value of the vector3 structure
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            _rigidBody.velocity = new Vector3(5, 0, 0); // since we are moving right, then we only need to set the YX value of the vector3 structure
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            _rigidBody.velocity = new Vector3(0, 0, -5); // since we are moving right, then we only need to set the YX value of the vector3 structure
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            _rigidBody.velocity = new Vector3(-5, 0, 0); // since we are moving right, then we only need to set the YX value of the vector3 structure
+            _rigidBody.velocity = new Vector3(_rigidBody.velocity.x, 5, _rigidBody.velocity.z); // since we are only jumping, then we only need to set the Y value of the vector3 structure
         }
     }
 }
